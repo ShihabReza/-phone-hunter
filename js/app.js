@@ -17,10 +17,8 @@ const searchBtn = ()=>{
 const diplayInput=(phones)=>{
     
     const container = document.getElementById('main-content')
-    // if(!phones){
-    //     console.log("Hello! I am an alert box!!");
-    // }
-    phones.forEach((phone)=>{
+    const first20Data = phones.slice(0,20)
+    first20Data.forEach((phone)=>{
         console.log(phone)
        const div = document.createElement('div')
        div.style.marginTop=('25px')
