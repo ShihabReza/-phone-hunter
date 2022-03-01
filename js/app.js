@@ -32,6 +32,7 @@ const diplayInput=(phones)=>{
              <div class="card-body">
              <h5 class="card-title">${phone.phone_name}</h5>
              <p>${phone.brand}</p>
+             
          <button onclick='phoneDetls("${phone.slug}")' class="btn btn-primary">details</button>
         </div>
       </div>
@@ -55,16 +56,20 @@ const setInfo=(info)=>{
    
   
    div.innerHTML=`
-     <div class="" style="width: 18rem ;">
-     <img src="${info.image}" class="card-img-top" alt="...">
-       <div class="card-body">
-       <h1>ReleaseDate: ${info.releaseDate}</h1>
-       <p>ChipSet: ${info.mainFeatures.chipSet}</p>
-       <p>DisplaySize: ${info.mainFeatures.displaySize}</p>
-       <p>Memory: ${info.mainFeatures.memory}</p>
-      
-    </div>
- </div>
+   
+<div class="" style="width: 18rem ;">
+<img src="${info.image}" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h1>ReleaseDate: ${info.releaseDate}</h1>
+  <p>ChipSet: ${info.mainFeatures.chipSet}</p>
+  <p>DisplaySize: ${info.mainFeatures.displaySize}</p>
+  <p>Memory: ${info.mainFeatures.memory}</p>
+  
+ 
+  
+ 
+</div>
+</div>
    `
    detalsInfo.appendChild(div)
 }
