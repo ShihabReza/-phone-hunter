@@ -34,7 +34,8 @@ const diplayInput=(phones)=>{
        div.style.marginTop=('25px')
        div.style.textAlign=('center')
        div.className='col-12 col-xl-4'
-       div.style.borderRadius=('25px')
+       
+       
       
        div.innerHTML=`
        <div class="" style="width: 18rem ;">
@@ -63,8 +64,6 @@ const setInfo=(info)=>{
    console.log(info)
    const detalsInfo = document.getElementById('detls-info')
    const div = document.createElement('div')
-   
-  
    div.innerHTML=`
    <div class="" style="width: 18rem ;">
      <img src="${info.image}" class="card-img-top" alt="...">
