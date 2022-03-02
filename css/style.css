@@ -6,4 +6,6 @@ body{
     font-weight: 600;
 }
 
-
+#eror{
+    display: none;
+}
