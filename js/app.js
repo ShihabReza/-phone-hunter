@@ -16,12 +16,15 @@ const searchBtn = ()=>{
 // ul display
 const diplayInput=(phones)=>{
   const massege = document.getElementById('eror')
-  if(phones.lenght==0){
+  
+  if(phones.length==0){
     
     massege.style.display=('block')
+   }else{
+    massege.style.display=('none')
    }
- 
     const container = document.getElementById('main-content')
+    
     const first20Data = phones.slice(0,20)
     
     first20Data.forEach((phone)=>{
@@ -40,7 +43,7 @@ const diplayInput=(phones)=>{
           <h5 class="card-title">${phone.phone_name}</h5>
           <p>${phone.brand}</p>
           
-      <button onclick='phoneDetls("${phone.slug}")' class="btn btn-primary">details</button>
+      <button onclick='phoneDetls("${phone.slug}")' class="btn btn-primary">Details</button>
      </div>
    </div>
        ` 
